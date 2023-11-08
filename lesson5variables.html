@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Variables Cart Quantity</title>
 </head>
 <body>
-    <p>Cart Quantity</p>
+  <p>Cart Quantity</p>
     <button onclick="
     console.log(`Cart Quantity: ${cartquantity}`);
     ">Show Quantity</button>
@@ -23,14 +24,36 @@
     console.log(`Cart Quantity: ${cartquantity}`);
     ">+3</button>
     <button onclick="
+    cartquantity+=4;
+    console.log(`Cart Quantity: ${cartquantity}`);
+    ">+4</button>
+    <button onclick="
+    cartquantity+=5;
+    console.log(`Cart Quantity: ${cartquantity}`);
+    ">+5</button>
+<button onclick="
+cartquantity-=2;
+    console.log(`Cart Quantity: ${cartquantity}`);
+">-2</button>
+<button onclick="
+cartquantity-=3;
+    console.log(`Cart Quantity: ${cartquantity}`);
+">-3</button>
+
+    <button onclick="
+    cartquantity-=1;
+    console.log(`Cart Quantity: ${cartquantity}`);
+    ">Remove from Cart</button>
+    <button onclick="
     cartquantity=0;
     console.log('cart was reset');
     console.log(`Cart Quantity: ${cartquantity}`);
     
     ">Reset cart</button>
 
+
     <script>
-        /*
+      /*  
         let variable1=3;
         console.log(variable1);
         let calculation =2+2;
@@ -47,6 +70,29 @@
      console.log(variable1);*/
 
      let cartquantity=0;
+
+    /* true
+     false
+     console.log(3<6);
+     if(30>=16){
+        console.log('you can drive')
+     }else{
+        console.log('you cant drive')
+     }*/
+//exercise
+     let name= 'Abrar'
+     console.log(`My name is ${name}`)
+     let cost=5+6+9
+     console.log(cost)
+     console.log(`Your Total Bill Is ${cost}$`)
+     let result= 20*0.1
+     console.log(result);
+     console.log(`Your Tax Is $${result}`)
+     let totalCost=20+2
+     console.log(`Your Total Cost Is $${totalCost}`)
+
+
+
 
     </script>
     
