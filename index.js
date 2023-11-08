@@ -19,3 +19,10 @@ console.log(y)
  */
 
 
+/* how to get acurate numbers result  */
+7.99+43.77
+51.760000000000005
+(799+4377)/100
+51.76 
+
+
