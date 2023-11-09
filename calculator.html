@@ -1,0 +1,304 @@
+
+
+  
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div style="width: 20%; height: 100%; background-color: black;border-radius: 20px;border-top-left-radius: 20px;">
+      <!--<div style="width: 150px; background-color:#0F0F0F;margin-bottom: 20px;">
+        <p style="text-align: center;color:snow;margin-left: 50%;font-size: 25px;padding-top: 10px;">Calculator</p>
+      </div>-->
+      <p>
+        <div style="margin-bottom: 20px;border-radius: 20px;"><input style="height:30px;margin-left: 17%;margin-top: 20px;border-radius: 10px;"></div>
+       <div style="justify-content: space-evenly;"> <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+            margin-left: 25px;
+          "
+          onclick="
+      calculation += '1';
+     console.log(calculation);
+      "
+        >
+          1
+        </button>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+          "
+          onclick="
+    calculation += '2';
+   console.log(calculation);
+    "
+        >
+          2
+        </button>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+          "
+          onclick="
+    calculation += '3';
+    console.log(calculation);
+    "
+        >
+          3
+        </button>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+          "
+          onclick="
+      calculation += ' + '
+      console.log(calculation)
+      "
+        >
+          +
+        </button>
+      </p></div>
+     <div > <p>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+            margin-left: 25px;
+          "
+          onclick="
+    calculation += '4';
+    console.log(calculation);
+    "
+        >
+          4
+        </button>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+          "
+          onclick="
+    calculation += '5';
+    console.log(calculation);
+    "
+        >
+          5
+        </button>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+          "
+          onclick="
+    calculation += '6';
+    console.log(calculation);
+    "
+        >
+          6
+        </button>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+          "
+          onclick="
+      calculation += '-';
+      console.log(calculation)
+      "
+        >
+          -
+        </button>
+      </p></div>
+    <div>  <button
+        style="
+          height: 50px;
+          width: 50px;
+          border-radius: 30px;
+          border-color: snow;
+          font-size: x-large;
+          color: #0F0F0F;
+          margin-left: 25px;
+        "
+        onclick="
+  calculation += '7';
+  console.log(calculation);
+  "
+      >
+        7
+      </button>
+      <button
+        style="
+          height: 50px;
+          width: 50px;
+          border-radius: 30px;
+          border-color: snow;
+          font-size: x-large;
+          color: #0F0F0F;
+        "
+        onclick="
+calculation += '8';
+console.log(calculation);
+"
+      >
+        8
+      </button>
+      <button
+        style="
+          height: 50px;
+          width: 50px;
+          border-radius: 30px;
+          border-color: snow;
+          font-size: x-large;
+          color: #0F0F0F;
+        "
+        onclick="
+calculation += '9';
+console.log(calculation);
+"
+      >
+        9
+      </button>
+      <button
+        style="
+          height: 50px;
+          width: 50px;
+          border-radius: 30px;
+          border-color: snow;
+          font-size: x-large;
+          color: #0F0F0F;
+        "
+        onclick="
+    calculation += '*';
+    console.log(calculation);
+    "
+      >
+        *
+      </button></div>
+     <div> <p>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+            margin-left: 25px;
+          "
+          onclick="
+calculation += '0';
+console.log(calculation);
+"
+        >
+          0
+        </button>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+          "
+          onclick="
+    calculation += '.';
+    console.log(calculation);
+    "
+        >
+          .
+        </button>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+          "
+          onclick="
+    calculation = eval(calculation);
+    console.log(calculation);
+    "
+        >
+          =
+        </button>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: x-large;
+            color: #0F0F0F;
+          "
+          onclick="
+      calculation +='/';
+      console.log(calculation);
+      "
+        >
+          /
+        </button>
+      </p></div>
+      <div>
+        <button
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            border-color: snow;
+            font-size: 15px;
+            color: #0F0F0F;
+            margin-left: 35%;
+            margin-bottom: 20px;
+          "
+          onclick="
+      calculation = '';
+   console.clear()
+    "
+        >
+          Clear
+        </button>
+      </div>
+    </div>
+    <script>
+      let calculation = "";
+    </script>
+  </body>
+</html>
