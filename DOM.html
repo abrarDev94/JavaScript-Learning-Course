@@ -4,18 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+      body{
+        background-color: chartreuse;
+      }
+      p{
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      .subscribebutton{
+        border:none;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      .is-subscribed{
+        background-color: red;
+        color:whitesmoke
+      }
+      .cost-input{
+        font-size: 15px;
+        padding: 10px ;
+      }
+      .Calculatebutton{
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        cursor: cell;
+      }
+    </style>
 </head>
 <body>
   <p>Youtube Subscribe Button</p>
   <button onclick="
   subscribe()
-  " class="subscribebutton">Subscribe </button>
+  " class="subscribebutton is-subscribed">Subscribe </button>
   <p>Amazon Shipping Calculator</p>
-  <input placeholder="Cost of Order" class="js-cost-input">
+  <p>IF purchasing order less then 40$ .you can pay 10$ for delivery</p>
+  <input placeholder="Cost of Order" class="js-cost-input cost-input">
   <button onclick="
-  calculateTotal()
-  ">Calculate</button>
+  calculateTotal() 
+  " class="Calculatebutton">Calculate</button>
   <p class="js-total-cost"></p>
+ 
    
     <script>
       function calculateTotal(){
@@ -32,11 +68,16 @@ document.querySelector('.js-total-cost')
         const buttonElement=document.querySelector('.subscribebutton')
   if(buttonElement.innerText==='Subscribe'){
     buttonElement.innerHTML='Subscribed'
+    buttonElement.classList.add
+    ('is-subscribed');
   }else{
     buttonElement.innerHTML='Subscribe'
+    buttonElement.classList.remove
+    ('is-subscribed')
   }
      }
-
+      
+ 
     </script>
 </body>
 </html>
