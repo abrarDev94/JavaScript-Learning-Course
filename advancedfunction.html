@@ -6,7 +6,18 @@
     <title>Advanced Function</title>
 </head>
 <body>
+    <button onclick="" class="js-button">click</button>
     <script>
+        const buttonElement = document.querySelector(
+           ' .js-button' 
+        )
+        buttonElement.addEventListener('click',()=>{
+            console.log('click')
+        });
+        buttonElement.addEventListener('click',()=>{
+            console.log('click2')
+        });
+
      /*   greeting()
         function greeting(){
             console.log('hello');
@@ -35,7 +46,7 @@
          } run(function(){
             console.log('hello4')
          })*/
-        setTimeout(function(){
+       /* setTimeout(function(){
            console.log('timeout')
            console.log('timeout2')
 
@@ -44,10 +55,31 @@
         setInterval(function(){
             console.log('interval')
         },3000)
-        console.log('next line 2')
+        console.log('next line 2')*/
+/*
+[
+   'make dinne',
+   'wash dishes',
+   'watch youtube' 
+]
+.forEach(function(value,index){
+    console.log(value,index)
+    console.log(value)
+})*/
 
-        
 
+  const arrowfunction = (value,value2) => {
+    console.log(`${value} + ${value2} =`,value+value2)
+  }    
+  arrowfunction(2,3);
+
+ /*  const abc=()=>2+3;
+   console.log(abc());
+const abrar=()=>{
+    console.log('salman bhai hogaya')
+    
+}
+abrar();*/
 
          
     </script>
